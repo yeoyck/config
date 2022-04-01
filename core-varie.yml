@@ -1,19 +1,16 @@
-# Datasource
-# https://github.com/brettwooldridge/HikariCP
-spring.datasource.url=jdbc:mysql://db.yeoyck.com:3306/varie
-spring.datasource.username=kin
-spring.datasource.password=986527@Yck
-spring.datasource.hikari.catalog=varie
-spring.datasource.hikari.schema=varie
-
-# JPA
-spring.jpa.properties.hibernate.dialect=com.varie.dao.sql.custom.CustomMySqlDialect
-spring.jpa.properties.hibernate.show_sql=true
-spring.jpa.properties.hibernate.format_sql=false
-
-# Auth
-auth0.audience=http://localhost:8080
-spring.security.oauth2.resourceserver.jwt.issuer-uri=
-
-# CORS
-general.ui.url=http://localhost:3080
+spring:
+  datasource:
+    url: jdbc:mysql://db.yeoyck.com:3306/varie
+    username: kin
+    password: 986527@Yck
+  hikari:
+    catalog: varie
+    schema: varie
+  jpa:
+    properties:
+      dialect: com.varie.dao.sql.custom.CustomMySqlDialect
+      show_sql: true
+      format_sql: false
+general:
+  ui:
+    url: http://localhost:3080
